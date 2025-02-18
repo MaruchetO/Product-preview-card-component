@@ -1,0 +1,16 @@
+:root {
+  /* Primary */
+  --green500: hsl(158, 36%, 37%);
+  --green700: hsl(158, 42%, 18%);
+  /* Neutral */
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+
+/* Attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
