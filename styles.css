@@ -12,7 +12,6 @@
   --grey: hsl(228, 12%, 48%);
   --cream: hsl(30, 38%, 92%);
   --white: hsl(0, 0%, 100%);
-  /* var(--white) */
 }
 
 /* Font */
@@ -32,15 +31,17 @@
 h1 {
   color: var(--black);
 }
+
 body {
   background-color: var(--cream);
   min-height: 100vh;
+  position: relative;
 }
 .container {
   /* width: clamp(21.5625rem, 8.7766rem + 31.9149vw, 37.5rem); */
   width: 600px;
 }
-img {
+picture img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -64,27 +65,30 @@ img {
   color: var(--white);
   font-weight: 700;
 }
-.btn:hover, :focus {
+.btn:hover {
   background-color: var(--green700);
+}
+.btn:focus {
+  background-color: var(--grey);
 }
 
 /* Attribution */
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: relative;
-  top: 20px;
+  position: absolute;
+  bottom: 10px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
   font-size: 11px;
+  color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639.1px) {
   .container {
     width: 345px;
   }
-  img {
+  picture img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
